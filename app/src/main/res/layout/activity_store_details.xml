@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StoreDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar_details_page"
+            layout="@layout/toolbar_store_details" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar_details_page"
+            android:layout_marginTop="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="call"
+                     android:layout_below="@id/call_imageView"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/call_imageView"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_phone"
+                    />
+
+                <ImageView
+                    android:id="@+id/favourite_img"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_favorite"
+                     android:layout_marginStart="90dp"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/text_favourite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="78dp"
+                    android:text="favourite"
+                    android:layout_below="@id/favourite_img"
+                    android:layout_marginTop="8dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circle_img_store_logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:civ_border_width="3dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/store_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    android:layout_marginTop="24dp"
+                    android:layout_below="@id/circle_img_store_logo"/>
+
+                <ImageView
+                    android:id="@+id/view_photos"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@id/circle_img_store_logo"
+                    android:src="@drawable/ic_photo_album"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@id/circle_img_store_logo"
+                    android:text="Photos"
+                    android:layout_below="@id/view_photos"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/videos"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@id/view_photos"
+                    android:src="@drawable/ic_videocam"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_photos"
+                    android:text="Video"
+                    android:layout_below="@id/videos"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="24dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_detail_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/go_to_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_favourite"
+                    android:text="Go to the map"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginStart="70dp"/>
+
+                <ImageView
+                    android:id="@+id/location_on_google_maps"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="220dp"
+                    android:src="@drawable/map_location"
+                    android:layout_marginStart="30dp"/>
+
+                <Button
+                    android:id="@+id/write_your_opinion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_login"
+                    android:paddingHorizontal="16dp"
+                    android:text="Write your opinion"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginBottom="32dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/desc_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_info"
+            android:layout_marginTop="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_view_store_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/working_hours_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_store_title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Working hours"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/working_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/working_hours_text"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp" />
+
+                <ImageView
+                    android:id="@+id/address_image"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_location"
+                    android:layout_below="@id/working_hours"/>
+
+                <TextView
+                    android:id="@+id/store_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="18dp"
+                    android:textSize="17sp"
+                    android:layout_toEndOf="@id/address_image"
+                    android:layout_marginTop="130dp" />
+
+                <TextView
+                    android:id="@+id/desc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="description"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    android:layout_below="@id/store_address"/>
+
+                <TextView
+                    android:id="@+id/store_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="36dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    android:layout_below="@id/desc_text"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/all_comments_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc_card_view"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="All comments"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_view_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/all_comments_text"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp" />
+
+    </RelativeLayout>
+</ScrollView>

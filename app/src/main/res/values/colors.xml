@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C2E83</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textCategory">#5C5C5C</color>
+    <color name="purple">#7779CE</color>
+    <color name="paramColor">#009EE3</color>
+    <color name="cardColor">#F0F0F0</color>
+</resources>

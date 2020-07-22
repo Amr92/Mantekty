@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_category">
+
+    <ImageView
+        android:id="@+id/img_categories"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/title_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amr"
+        android:textSize="12sp"
+        android:textColor="@color/textCategory"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

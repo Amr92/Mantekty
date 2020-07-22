@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mante2ty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mantekty_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.ShareApp"></activity>
+        <activity android:name=".ui.ProfileImage" />
+        <activity android:name=".ui.Notifications" />
+        <activity android:name=".ui.Settings" />
+        <activity android:name=".ui.OfferDetails" />
+        <activity android:name=".ui.ChangeArea" />
+        <activity android:name=".ui.AppRating" />
+        <activity android:name=".ui.FavouriteList" />
+        <activity android:name=".ui.StoreDetails" />
+        <activity android:name=".ui.OfferStoreDetails" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBiUloSmcyU87VB3qaajWBjOXJkrHmjgDo" />
+
+        <activity
+            android:name=".ui.Maps"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ui.AboutApp" />
+        <activity android:name=".ui.EmergencyNumbers" />
+        <activity
+            android:name=".ui.Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ui.Register" />
+        <activity android:name=".ui.Login" />
+        <activity android:name=".ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ChangeArea">
+
+    <include
+        layout="@layout/toolbar_select_area"/>
+
+    <RelativeLayout
+        android:id="@+id/select_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="24dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/area_round_layout">
+
+        <TextView
+            android:id="@+id/province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Province"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/select_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/area_round_layout">
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/select_neighborhood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="24dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/area_round_layout">
+
+            <TextView
+                android:id="@+id/neighborhood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="neighborhood"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/select_area_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="46dp"
+        android:background="@drawable/button_login"
+        android:text="Select"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:fontFamily="@android:string/copy"/>
+
+</LinearLayout>

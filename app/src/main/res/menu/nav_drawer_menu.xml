@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/favouriteList"
+        android:title="My favourite"
+        android:icon="@drawable/favorite"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/appRating"
+        android:title="App rating"
+        android:icon="@drawable/check_list"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/share_app"
+        android:title="Share App"
+        android:icon="@drawable/share"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/qr_symbol"
+        android:title="QR symbol"
+        android:icon="@drawable/ui"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/notifications"
+        android:title="Notification"
+        android:icon="@drawable/notification"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/language"
+        android:title="Select language"
+        android:icon="@drawable/language"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/emergencyNumbers"
+        android:title="Emergency numbers"
+        android:icon="@drawable/emergency_call"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/contactUs"
+        android:title="Contact us"
+        android:icon="@drawable/support"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/terms_conditions"
+        android:title="Terms and conditions"
+        android:icon="@drawable/share"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@id/aboutApp"
+        android:title="About the app"
+        android:icon="@drawable/information"
+        android:menuCategory="secondary"/>
+
+</menu>

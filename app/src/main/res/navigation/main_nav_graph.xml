@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.mante2ty.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/offers"
+        android:name="com.example.mante2ty.Fragments.OffersFragment"
+        android:label="Offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/contactUs"
+        android:name="com.example.mante2ty.Fragments.ContactUsFragment"
+        android:label="Contact us"
+        tools:layout="@layout/fragment_contact_us" />
+    <activity
+        android:id="@+id/emergencyNumbers"
+        android:name="com.example.mante2ty.ui.EmergencyNumbers"
+        android:label="emergency numbers"
+        tools:layout="@layout/activity_emergency_numbers" />
+    <fragment
+        android:id="@+id/departments"
+        android:name="com.example.mante2ty.Fragments.DepartmentsFragment"
+        android:label="fragment_departments"
+        tools:layout="@layout/fragment_departments" />
+    <activity
+        android:id="@+id/aboutApp"
+        android:name="com.example.mante2ty.ui.AboutApp"
+        android:label="activity_about_app"
+        tools:layout="@layout/activity_about_app" />
+    <activity
+        android:id="@+id/favouriteList"
+        android:name="com.example.mante2ty.ui.FavouriteList"
+        android:label="activity_favourite_list"
+        tools:layout="@layout/activity_favourite_list" />
+    <activity
+        android:id="@+id/appRating"
+        android:name="com.example.mante2ty.ui.AppRating"
+        android:label="activity_app_rating"
+        tools:layout="@layout/activity_app_rating" />
+    <activity
+        android:id="@+id/settings"
+        android:name="com.example.mante2ty.ui.Settings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <activity
+        android:id="@+id/notifications"
+        android:name="com.example.mante2ty.ui.Notifications"
+        android:label="activity_notifications"
+        tools:layout="@layout/activity_notifications" />
+    <activity
+        android:id="@+id/share_app"
+        android:name="com.example.mante2ty.ui.ShareApp"
+        android:label="activity_share_app"
+        tools:layout="@layout/activity_share_app" />
+</navigation>
